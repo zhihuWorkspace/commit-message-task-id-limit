@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "commitlint",
+    "commit": "git-cz",
     "postinstall": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "author": "",
   "license": "ISC",
@@ -14,5 +19,9 @@
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "husky": "^6.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cz-commitlint": "^12.1.4",
+    "commitizen": "^4.2.4"
   }
 }
